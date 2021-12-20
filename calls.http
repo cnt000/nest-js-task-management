@@ -1,0 +1,13 @@
+### TASK MANAGEMENT
+
+### Get all tasks
+GET http://localhost:3001/tasks HTTP/1.1
+
+### Create Task
+POST http://localhost:3001/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "title": "a title", 
+    "description": "a description"
+}
