@@ -3,6 +3,19 @@
 ### Get all tasks
 GET http://localhost:3001/tasks HTTP/1.1
 
+### Get task by Id
+GET http://localhost:3001/tasks/2c6be361-480e-4a69-844e-918a746fb69f HTTP/1.1
+
+### Delete task
+DELETE http://localhost:3001/tasks/5cf70dd7-564f-4a97-9ce2-ab11df3c06e3 HTTP/1.1
+
+### Update status task
+PATCH http://localhost:3001/tasks/d9224c01-0025-4420-baa0-cd3dd97ce0c6/status HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+status=IN_PROGRESS
+
+
 ### Create Task
 POST http://localhost:3001/tasks HTTP/1.1
 content-type: application/json
