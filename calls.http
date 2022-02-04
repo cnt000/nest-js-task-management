@@ -3,17 +3,20 @@
 ### Get all tasks
 GET http://localhost:3001/tasks HTTP/1.1
 
-### Get all tasks with filter
+### Get all tasks with filter status
 GET http://localhost:3001/tasks?status=OPEN HTTP/1.1
 
+### Get all tasks with filter search
+GET http://localhost:3001/tasks?search=BEER&status=OPEN HTTP/1.1
+
 ### Get task by Id
-GET http://localhost:3001/tasks/2c6be361-480e-4a69-844e-918a746fb69f HTTP/1.1
+GET http://localhost:3001/tasks/fd287fa7-2348-4ba0-9f8a-1880758bd921 HTTP/1.1
 
 ### Delete task
-DELETE http://localhost:3001/tasks/5cf70dd7-564f-4a97-9ce2-ab11df3c06e3 HTTP/1.1
+DELETE http://localhost:3001/tasks/951d5b82-9408-4ede-af24-16198b1f813d HTTP/1.1
 
 ### Update status task
-PATCH http://localhost:3001/tasks/10d7df5e-3ecc-4378-b042-3422ad0ac22a/status HTTP/1.1
+PATCH http://localhost:3001/tasks/fd287fa7-2348-4ba0-9f8a-1880758bd921/status HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
 status=IN_PROGRESS
@@ -26,6 +29,15 @@ content-type: application/json
 {
     "title": "a title", 
     "description": "a description"
+}
+
+### Create Task
+POST http://localhost:3001/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "title": "evening", 
+    "description": "a beer"
 }
 
 ### Create Empty values Task
