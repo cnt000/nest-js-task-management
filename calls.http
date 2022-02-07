@@ -48,3 +48,14 @@ content-type: application/json
     "title": "", 
     "description": ""
 }
+
+###AUTH#######################
+
+### Create User
+POST http://localhost:3001/auth/signup HTTP/1.1
+content-type: application/json
+
+{
+    "username": "cnt000", 
+    "password": "password"
+}
