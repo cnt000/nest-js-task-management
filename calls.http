@@ -51,11 +51,21 @@ content-type: application/json
 
 ###AUTH#######################
 
-### Create User
+### Create User - signup
 POST http://localhost:3001/auth/signup HTTP/1.1
 content-type: application/json
 
 {
     "username": "cnt000", 
-    "password": "password"
+    "password": "Password1!"
+}
+
+
+### Login - signin
+POST http://localhost:3001/auth/signin HTTP/1.1
+content-type: application/json
+
+{
+    "username": "cnt000", 
+    "password": "Password1!"
 }
