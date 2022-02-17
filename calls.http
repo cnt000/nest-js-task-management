@@ -56,7 +56,7 @@ POST http://localhost:3001/auth/signup HTTP/1.1
 content-type: application/json
 
 {
-    "username": "cnt000", 
+    "username": "cnt003", 
     "password": "Password1!"
 }
 
