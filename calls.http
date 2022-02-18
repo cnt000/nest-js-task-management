@@ -2,6 +2,7 @@
 
 ### Get all tasks
 GET http://localhost:3001/tasks HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMCIsImlhdCI6MTY0NTE4OTEzNiwiZXhwIjoxNjQ1MTkyNzM2fQ.OHd9Re3M2RimeO9MTKBa82s7wm_8FB92-T07cC7rD10
 
 ### Get all tasks with filter status
 GET http://localhost:3001/tasks?status=OPEN HTTP/1.1
