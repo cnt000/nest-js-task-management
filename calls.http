@@ -2,19 +2,23 @@
 
 ### Get all tasks
 GET http://localhost:3001/tasks HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMCIsImlhdCI6MTY0NTE4OTEzNiwiZXhwIjoxNjQ1MTkyNzM2fQ.OHd9Re3M2RimeO9MTKBa82s7wm_8FB92-T07cC7rD10
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMSIsImlhdCI6MTY0NjA1NDE4MSwiZXhwIjoxNjQ2MDU3NzgxfQ.Nf7sg6AeYskRk2aV3n_bgJRCfK1rdFabG4YQSuF3k9E
 
 ### Get all tasks with filter status
 GET http://localhost:3001/tasks?status=OPEN HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMCIsImlhdCI6MTY0NjA1MzAzOSwiZXhwIjoxNjQ2MDU2NjM5fQ.XJoCBGdF-eytpnFaKRshiadO73yszlFAfZAcn_0dtS8
 
 ### Get all tasks with filter search
 GET http://localhost:3001/tasks?search=BEER&status=OPEN HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMCIsImlhdCI6MTY0NjA1MzAzOSwiZXhwIjoxNjQ2MDU2NjM5fQ.XJoCBGdF-eytpnFaKRshiadO73yszlFAfZAcn_0dtS8
 
 ### Get task by Id
-GET http://localhost:3001/tasks/fd287fa7-2348-4ba0-9f8a-1880758bd921 HTTP/1.1
+GET http://localhost:3001/tasks/283c7e0b-e126-4f55-a0f3-9b496e500094 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMCIsImlhdCI6MTY0NjA1NDY5MiwiZXhwIjoxNjQ2MDU4MjkyfQ.eFXrjAoJSdwOIvWdr1vNqMhVXTMv46NJ2G3IdSWeDAQ
 
 ### Delete task
-DELETE http://localhost:3001/tasks/951d5b82-9408-4ede-af24-16198b1f813d HTTP/1.1
+DELETE http://localhost:3001/tasks/283c7e0b-e126-4f55-a0f3-9b496e500094 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMSIsImlhdCI6MTY0NjA1NDk1OSwiZXhwIjoxNjQ2MDU4NTU5fQ.gw3YhsfUaCiKneqPtyR0dxW-4YkW7k-BGEK8dwwBbY4
 
 ### Update status task
 PATCH http://localhost:3001/tasks/fd287fa7-2348-4ba0-9f8a-1880758bd921/status HTTP/1.1
@@ -26,6 +30,7 @@ status=IN_PROGRESS
 ### Create Task
 POST http://localhost:3001/tasks HTTP/1.1
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMSIsImlhdCI6MTY0NjA1MzY0NCwiZXhwIjoxNjQ2MDU3MjQ0fQ.kBsq4ddI4_rNfRYYJTjNnv4fdod8Ru2oUxoeNUbwwLA
 
 {
     "title": "a title", 
@@ -35,9 +40,10 @@ content-type: application/json
 ### Create Task
 POST http://localhost:3001/tasks HTTP/1.1
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMSIsImlhdCI6MTY0NjA1MzY0NCwiZXhwIjoxNjQ2MDU3MjQ0fQ.kBsq4ddI4_rNfRYYJTjNnv4fdod8Ru2oUxoeNUbwwLA
 
 {
-    "title": "evening", 
+    "title": "from user 2", 
     "description": "a beer"
 }
 
@@ -57,7 +63,7 @@ POST http://localhost:3001/auth/signup HTTP/1.1
 content-type: application/json
 
 {
-    "username": "cnt003", 
+    "username": "cnt001", 
     "password": "Password1!"
 }
 
@@ -67,6 +73,6 @@ POST http://localhost:3001/auth/signin HTTP/1.1
 content-type: application/json
 
 {
-    "username": "cnt000", 
+    "username": "cnt001", 
     "password": "Password1!"
 }
