@@ -2,15 +2,15 @@
 
 ### Get all tasks
 GET http://localhost:3001/tasks HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMSIsImlhdCI6MTY0NjA1NDE4MSwiZXhwIjoxNjQ2MDU3NzgxfQ.Nf7sg6AeYskRk2aV3n_bgJRCfK1rdFabG4YQSuF3k9E
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMCIsImlhdCI6MTY0NjIyNTYyNSwiZXhwIjoxNjQ2MjI5MjI1fQ.AGYYVhyc2Ho5fu5K03vD2TKSoSHVLrJZMDDs8YUwmWU
 
 ### Get all tasks with filter status
 GET http://localhost:3001/tasks?status=OPEN HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMCIsImlhdCI6MTY0NjA1MzAzOSwiZXhwIjoxNjQ2MDU2NjM5fQ.XJoCBGdF-eytpnFaKRshiadO73yszlFAfZAcn_0dtS8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMCIsImlhdCI6MTY0NjIyNTYyNSwiZXhwIjoxNjQ2MjI5MjI1fQ.AGYYVhyc2Ho5fu5K03vD2TKSoSHVLrJZMDDs8YUwmWU
 
 ### Get all tasks with filter search
 GET http://localhost:3001/tasks?search=BEER&status=OPEN HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMCIsImlhdCI6MTY0NjA1MzAzOSwiZXhwIjoxNjQ2MDU2NjM5fQ.XJoCBGdF-eytpnFaKRshiadO73yszlFAfZAcn_0dtS8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMCIsImlhdCI6MTY0NjIyNTYyNSwiZXhwIjoxNjQ2MjI5MjI1fQ.AGYYVhyc2Ho5fu5K03vD2TKSoSHVLrJZMDDs8YUwmWU
 
 ### Get task by Id
 GET http://localhost:3001/tasks/283c7e0b-e126-4f55-a0f3-9b496e500094 HTTP/1.1
@@ -30,7 +30,7 @@ status=IN_PROGRESS
 ### Create Task
 POST http://localhost:3001/tasks HTTP/1.1
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMSIsImlhdCI6MTY0NjA1MzY0NCwiZXhwIjoxNjQ2MDU3MjQ0fQ.kBsq4ddI4_rNfRYYJTjNnv4fdod8Ru2oUxoeNUbwwLA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMCIsImlhdCI6MTY0NjIyNTYyNSwiZXhwIjoxNjQ2MjI5MjI1fQ.AGYYVhyc2Ho5fu5K03vD2TKSoSHVLrJZMDDs8YUwmWU
 
 {
     "title": "a title", 
@@ -73,6 +73,6 @@ POST http://localhost:3001/auth/signin HTTP/1.1
 content-type: application/json
 
 {
-    "username": "cnt001", 
+    "username": "cnt000", 
     "password": "Password1!"
 }
