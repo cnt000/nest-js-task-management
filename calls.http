@@ -6,7 +6,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNud
 
 ### Get all tasks with filter status
 GET http://localhost:3001/tasks?status=OPEN HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMCIsImlhdCI6MTY0NjIyNTYyNSwiZXhwIjoxNjQ2MjI5MjI1fQ.AGYYVhyc2Ho5fu5K03vD2TKSoSHVLrJZMDDs8YUwmWU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMCIsImlhdCI6MTY0ODA0MDY3MSwiZXhwIjoxNjQ4MDQ0MjcxfQ.LWd7ss1KSlI5LV9rO5xAFccsZW_NZWbj6P2rmeLWbm0
 
 ### Get all tasks with filter search
 GET http://localhost:3001/tasks?search=BEER&status=OPEN HTTP/1.1
