@@ -76,3 +76,13 @@ content-type: application/json
     "username": "cnt000", 
     "password": "Password1!"
 }
+
+
+-----------------------------------------------------
+
+PROD
+
+### Get all tasks
+GET https://task-management-cnt000.herokuapp.com/tasks HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNudDAwMCIsImlhdCI6MTY0NjIyNTYyNSwiZXhwIjoxNjQ2MjI5MjI1fQ.AGYYVhyc2Ho5fu5K03vD2TKSoSHVLrJZMDDs8YUwmWU
+
